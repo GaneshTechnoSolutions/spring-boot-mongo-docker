@@ -3,7 +3,7 @@ version: '3.1'
 services:
   springboot:
     image: singade18/spring-boot-mongo:latest
-    restart: "no"
+    restart: no
     container_name: springboot
     ports:
       - 9090:8080
@@ -26,7 +26,7 @@ services:
     volumes:
       - data:/data/db
       - data-bkp:/data/bkp
-    restart: always
+    restart: no
     
 volumes:
   data:
