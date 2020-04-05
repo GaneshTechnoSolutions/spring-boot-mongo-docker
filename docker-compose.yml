@@ -3,7 +3,7 @@ version: '3.1'
 services:
   springboot:
     image: singade18/spring-boot-mongo:latest
-    restart: never
+    restart: "no"
     container_name: springboot
     ports:
       - 9090:8080
